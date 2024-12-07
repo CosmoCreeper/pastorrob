@@ -196,3 +196,43 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: none;
     border: 1px solid transparent;
 }
+
+@media screen and (max-width: 561.583px) {
+    #soundboard {
+        width: 400px;
+    }
+
+    #overlay {
+        width: 400px;
+        height: 400px;
+    }
+
+    #sounds {
+        z-index: 20;
+        width: 213.68168195974593248014986208628px;
+        right: calc(400px - 87.85%);
+    }
+
+    .sound {
+        width: 42.736336391949186496029972417256px;
+        height: 43.44860866514833960429713862421px;
+        margin: 6.5529049134322085960579291039793px;
+        margin-top: 6.1255415495127167310976293798067px;
+        margin-bottom: 6.1255415495127167310976293798067px;
+    }
+
+    #sidebar {
+        height: 249.29529561970358789350817243399px;
+        width: 92.595395515889904074731606904055px;
+    }
+
+    #reset {
+        margin-top: 10px !important;
+    }
+
+    #stop {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 4px !important;
+    }
+}
