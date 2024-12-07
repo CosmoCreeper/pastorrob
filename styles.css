@@ -111,9 +111,10 @@ input[type="range"] {
     background: transparent;
     width: 34px;
     margin-top: 0;
+    height: 130px;
 }
 
-input[type="range"]::-moz-range-track {
+/* input[type="range"]::-moz-range-track {
     background: black;
     width: 5px;
 }
@@ -125,7 +126,7 @@ input[type="range"]::-moz-range-thumb {
     height: 70px;
     width: 28px;
     border: none;
-}
+} */
 
 #faders {
     display: grid;
@@ -228,16 +229,16 @@ input[type="range"]::-moz-range-thumb {
     }
 
     #sidebar div {
-        margin-top: 0;
-    }
-
-    #reset {
-        margin-top: 10px !important;
+        margin-top: 5px;
     }
 
     #stop {
         font-size: 12px;
         line-height: 20px;
-        margin-top: 4px !important;
+        margin-top: 5px !important;
+    }
+
+    input[type="range"] {
+        height: 100px;
     }
 }
