@@ -227,6 +227,10 @@ input[type="range"]::-moz-range-thumb {
         width: 92.595395515889904074731606904055px;
     }
 
+    #sidebar div {
+        margin-top: 0;
+    }
+
     #reset {
         margin-top: 10px !important;
     }
@@ -235,9 +239,5 @@ input[type="range"]::-moz-range-thumb {
         font-size: 12px;
         line-height: 20px;
         margin-top: 4px !important;
-    }
-
-    #sidebar div {
-        margin-top: 0;
     }
 }
