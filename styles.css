@@ -110,6 +110,7 @@ input[type="range"] {
     appearance: slider-vertical;
     background: transparent;
     width: 34px;
+    margin-top: 0;
 }
 
 input[type="range"]::-moz-range-track {
@@ -234,5 +235,9 @@ input[type="range"]::-moz-range-thumb {
         font-size: 12px;
         line-height: 20px;
         margin-top: 4px !important;
+    }
+
+    #sidebar div {
+        margin-top: 0;
     }
 }
