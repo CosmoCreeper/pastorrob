@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pastor Rob Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>The Pastor Rob Soundboard</h1>
+    <p>Test the soundboard below.</p>
+
+    <img src="assets/soundpadz.png" id="soundboard"/>
+    <div id="overlay">
+        <div id="sidebar">
+            <div id="faders"> 
+                <div class="tooltip"><input id="volume" type="range" min="0" max="200" 
+                value="100" class="slider" orient="vertical" oninput="updateInputs()"><div class="tooltiptext">100%</div></div>
+                <div class="tooltip"><input id="bass" type="range" min="-100" max="50" 
+                value="0" class="slider" orient="vertical" oninput="updateInputs()"><div class="tooltiptext">+0 dB</div></div>
+                <div class="tooltip"><input id="speed" type="range" min="0" max="2" 
+                value="1" step="0.1" class="slider" orient="vertical" oninput="updateInputs()"><div class="tooltiptext">1x</div></div>
+            </div>
+            <div id="fader-titles">
+                <span class="tooltip">V <div class="tooltiptext">Volume</div></span>
+                <span class="tooltip">B <div class="tooltiptext">Bass</div></span>
+                <span class="tooltip">S <div class="tooltiptext">Speed</div></span>
+            </div>
+            <div id="reset" style="margin-top: 30px;" onclick="reset()">Reset</div>
+            <div id="stop" style="margin-top: 10px;" onclick="stopSounds()">Stop Sounds</div>
+        </div>
+        <div id="sounds"></div>
+    </div>
+
+    <div id="author">Solomon Latham</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
