@@ -210,10 +210,10 @@ input[type="range"]::-moz-range-thumb {
 #banks {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 80px;
+    width: 112.3166px;
     position: absolute;
-    bottom: 64px;
-    right: 108px;
+    bottom: 89.85328px;
+    right: 151.62741px;
 }
 
 #banks div {
@@ -224,9 +224,9 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.9);
     display: inline-block;
     padding: 5px;
-    width: 8px;
-    height: 8px;
-    line-height: 8px;
+    width: 11.23166px;
+    height: 11.23166px;
+    line-height: 11.23166px;
     font-size: 12px;
 }
 
@@ -281,6 +281,18 @@ input[type="range"]::-moz-range-thumb {
 
     h1 {
         font-size: 6vw;
+    }
+
+    #banks {
+        width: 80px;
+        bottom: 64px;
+        right: 108px;
+    }
+
+    #banks div {
+        width: 8px;
+        height: 8px;
+        line-height: 8px;
     }
 }
 
