@@ -207,6 +207,35 @@ input[type="range"]::-moz-range-thumb {
     border: 1px solid transparent;
 }
 
+#banks {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80px;
+    position: absolute;
+    bottom: 64px;
+    right: 108px;
+}
+
+#banks div {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 100ms ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    padding: 5px;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    font-size: 12px;
+}
+
+#banks div:active {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+
 @media screen and (max-width: 561.583px) {
     #soundboard {
         width: 400px;
@@ -282,33 +311,4 @@ svg.fbc {
 
 h1 {
     margin-top: 10px;
-}
-
-#banks {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-#banks div {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-left: 50%;
-    transform: translateX(-50%);
-    transition: all 100ms ease;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.9);
-    line-height: 5px;
-    display: inline-block;
-    padding: 5px;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-}
-
-#banks div:active {
-    border: 1px solid transparent !important;
-    box-shadow: none !important;
 }
