@@ -2,7 +2,7 @@
 A pastor rob soundboard.
 
 ## The Pastor Rob Archive (🛠️WIP)
-We are the only archive of pastor rob clips. You can find the transcripts of every singular sermon pastor rob has ever preached on livestream within a single .txt file. Just download our "pastor-rob-sermons.txt" and you can search for clips. The program we use to get transcripts from a playlist is available at [This GitHub Repo made by us](https://github.com/CosmoCreeper/youtube-transcript-retriever).
+You can find the transcripts of every sermon Pastor Rob has ever preached on livestream (that also has a transcript on youtube) within a single .txt file. Just download our "pastor-rob-sermons.txt" and you can search for clips. The program we use to get transcripts from a playlist is available at [this GitHub Repo](https://github.com/CosmoCreeper/youtube-transcript-retriever).
 
 Each different sermon is marked with a video ID that will take you back to youtube. If you find any cool clips from the sermons .txt, please help contribute by suggesting a new sound for the pastor rob soundboard.
 
