@@ -1,7 +1,7 @@
 {
     "name": "PRSB",
-    "theme_color": "#5d8b9e",
-    "background_color": "#ffffff",
+    "theme_color": "#434448",
+    "background_color": "#1a1818",
     "short_name": "PRSB",
     "id": "pr-soundboard",
     "description": "Play common Pastor Rob sound effects with this tool!",
