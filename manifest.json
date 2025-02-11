@@ -3,7 +3,7 @@
     "theme_color": "#5d8b9e",
     "background_color": "#ffffff",
     "short_name": "PRSB",
-    "id": "sermonsearch",
+    "id": "pr-soundboard",
     "description": "Search Faith Bible Church sermons with our amazing tool!",
     "prefer_related_applications": false,
     "display": "standalone",
