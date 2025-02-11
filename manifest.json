@@ -4,7 +4,7 @@
     "background_color": "#ffffff",
     "short_name": "PRSB",
     "id": "pr-soundboard",
-    "description": "Search Faith Bible Church sermons with our amazing tool!",
+    "description": "Play common Pastor Rob sound effects with this tool!",
     "prefer_related_applications": false,
     "display": "standalone",
     "orientation": "any",
