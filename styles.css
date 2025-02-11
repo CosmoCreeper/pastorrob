@@ -1,0 +1,326 @@
+@font-face {
+    src: url("./assets/fonts/Barriecito-Regular.ttf");
+    font-family: "Author";
+}
+
+@font-face {
+    src: url("./assets/fonts/HomeVideo-BLG6G.ttf");
+    font-family: "Screen";
+}
+
+@font-face {
+    src: url("./assets/fonts/rotis-semi-serif-std-65-bold.otf");
+    font-family: "FBC";
+}
+
+@font-face {
+    src: url("./assets/fonts/unison-pro-bold-round.otf");
+    font-family: "VBS";
+}
+
+body {
+    margin: 0;
+    font-family: "FBC";
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 24, 24);
+}
+
+* {
+    transition: all 300ms ease;
+    user-select: none;
+}
+
+#soundboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 561.583px;
+    user-select: none;
+}
+
+#overlay {
+    width: 561.583px;
+    height: 561.583px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+#sidebar {
+    position: absolute;
+    top: 22%;
+    left: 9%;
+    height: 350px;
+    width: 130px;
+}
+
+#sidebar div {
+    margin-top: 10px;
+}
+
+#sidebar input {
+    width: 90%;
+}
+
+#sounds {
+    position: absolute;
+    top: 49.3%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    z-index: 20;
+    width: 300px;
+    right: calc(561.583px - 87.85%);
+}
+
+.sound {
+    width: 60px;
+    height: 61px;
+    margin: 9.2px;
+    margin-top: 8.6px;
+    margin-bottom: 8.6px;
+    user-select: none;
+    background: rgb(44, 45, 49);
+    transition: all 100ms ease;
+}
+
+.sound:active {
+    box-shadow: 0 0 5px 2px black !important;
+}
+
+#author {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-family: "Author";
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0px 10px;
+    line-height: 25px;
+    user-select: none;
+    transition: all 100ms ease;
+}
+
+#author:hover {
+    background: rgba(255, 255, 255, 0);
+    animation: author-pop 2s ease;
+}
+
+#author:active {
+    background: rgba(255, 255, 255, 0.05);
+    transform: rotate(90deg)l
+}
+
+@keyframes author-pop {
+    0% { transform: scale(1) }
+    25% { transform: scale(0.9) }
+    50% { transform: scale(1) }
+    100% { transform: scale(1) }
+}
+
+input[type="range"] {
+    appearance: slider-vertical;
+    background: transparent;
+    width: 30px;
+    margin-top: 0;
+    height: 130px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: black;
+    width: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: transparent;
+    background: url("./assets/fader.png");
+    background-size: cover;
+    border-radius: 0;
+    height: calc(304px / 10);
+    width: calc(146px / 10);
+    border: none;
+}
+
+#faders {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#fader-titles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: "VBS";
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#reset {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: all 100ms ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    line-height: 5px;
+    display: inline-block;
+    padding: 5px;
+    width: 16px;
+    
+}
+
+#reset:active {
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+#stop {
+    background: rgba(255, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(255, 0, 0, 0.7);
+    transition: all 100ms ease;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    padding: 5px;
+}
+
+#stop:active {
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+#banks {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 112.3166px;
+    position: absolute;
+    bottom: 89.85328px;
+    right: 151.62741px;
+}
+
+#banks div {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 100ms ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    padding: 5px;
+    width: 11.23166px;
+    height: 11.23166px;
+    line-height: 11.23166px;
+    font-size: 12px;
+}
+
+#banks div:active {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+
+@media screen and (max-width: 561.583px) {
+    #soundboard {
+        width: 400px;
+    }
+
+    #overlay {
+        width: 400px;
+        height: 400px;
+    }
+
+    #sounds {
+        z-index: 20;
+        width: 213.68168195974593248014986208628px;
+        right: calc(400px - 87.85%);
+    }
+
+    .sound {
+        width: 42.736336391949186496029972417256px;
+        height: 43.44860866514833960429713862421px;
+        margin: 6.5529049134322085960579291039793px;
+        margin-top: 6.1255415495127167310976293798067px;
+        margin-bottom: 6.1255415495127167310976293798067px;
+    }
+
+    #sidebar {
+        height: 249.29529561970358789350817243399px;
+        width: 92.595395515889904074731606904055px;
+    }
+
+    #sidebar div {
+        margin-top: 5px;
+    }
+
+    #stop {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 5px !important;
+    }
+
+    input[type="range"] {
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    #banks {
+        width: 80px;
+        bottom: 64px;
+        right: 108px;
+    }
+
+    #banks div {
+        width: 8px;
+        height: 8px;
+        line-height: 8px;
+    }
+}
+
+#screen {
+    background-color: #3f54de;
+    color: rgba(255, 255, 255, 0.7);
+    width: 85%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    height: 29px;
+    font-family: "Screen";
+    padding: 5px;
+}
+
+svg.fbc {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.line {
+    border-top: 2px solid white;
+    width: 75%;
+    margin-left: 50%;
+    margin-top: 17px;
+    transform: translateX(-50%);
+}
+
+h1 {
+    margin-top: 10px;
+}
